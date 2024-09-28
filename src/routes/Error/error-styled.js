@@ -12,7 +12,6 @@ export const MainError = styled.main`
     a{
         font-size: 3rem;
         font-weight: bold;
-        font-family: "PT Serif", serif;
         font-style: italic;
         color: #3C3CFF;
         text-decoration: none;

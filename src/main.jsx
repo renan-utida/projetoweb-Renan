@@ -6,10 +6,10 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App.jsx'
 import Error from './routes/Error/index.jsx'
 import Home from './routes/Home/index.jsx'
-import Produtos from './routes/Produtos.jsx'
-import Sobre from './routes/Sobre.jsx'
-import Login from './routes/Login.jsx'
-import CadastrarProduto from './routes/CadastrarProduto.jsx'
+import Produtos from './routes/Produtos/index.jsx'
+import Sobre from './routes/Sobre/index.jsx'
+import Login from './routes/Login/index.jsx'
+import CadastrarProduto from './routes/CadastrarProduto/index.jsx'
 
 const router = createBrowserRouter([
   {

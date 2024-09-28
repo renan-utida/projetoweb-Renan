@@ -1,11 +1,13 @@
+import { MainHome } from "./home-styled"
+import ImageSlider from "./ImageSlider"
 
 
 const Home =()=>{
 
     return(
-        <>
-            <h1>Home</h1>
-        </>
+        <MainHome>
+            <ImageSlider/>
+        </MainHome>
     )
 }
 

@@ -8,7 +8,7 @@ export const HeaderCabecalho = styled.header`
     height: 90px;
     position: fixed;
     width: 100%;
-    background-color: black;
+    background-color: #000020;
     z-index: 1000; 
     overflow: hidden;
 

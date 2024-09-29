@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const MainSobre = styled.main`
     margin-top: 90px;
     padding: 40px 60px;
+    background-color: #dcdcdc;
 
     h1{
         font-size: 2.8em;

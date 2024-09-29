@@ -104,7 +104,7 @@ const BoxLogin = () => {
 
                 <div className="signup-link">
                     <p>Não possui uma conta?</p>
-                    <Link to="/cadastrarUsuario">Criar</Link>
+                    <Link to="/criarUsuario">Criar</Link>
                 </div>
             </form>
 

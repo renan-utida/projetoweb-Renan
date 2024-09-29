@@ -2,7 +2,7 @@ import { MainCriarUsuario } from "./cadastro-usuario-styled"
 import NovoUsuario from "./NovoUsuario"
 
 
-const CadastrarUsuario = () => {
+const CriarUsuario = () => {
 
     return(
         <MainCriarUsuario>
@@ -11,4 +11,4 @@ const CadastrarUsuario = () => {
     )
 }
 
-export default CadastrarUsuario
+export default CriarUsuario

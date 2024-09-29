@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 import IconUsuario from "../../assets/icons8-usuario.png";
 import IconSenha from "../../assets/icons8-trancar.png";
@@ -20,12 +20,12 @@ const BoxLogin = () => {
 
     // Criando a função de validação
     function validate(){
-        for(let i=0; i < setUsuarios.length; i++){
+        for(let i=0; i < usuarios.length; i++){
             if(
                 usuarios[i].usuario == usuario.current.value &&
                 usuarios[i].senha == senha.current.value
             )
-            return true;
+            return true
         }
     };
 
@@ -41,7 +41,7 @@ const BoxLogin = () => {
                 Math.random().toString(16).substring(2)
                 sessionStorage.setItem("usuario", usuario.current.value);
                 sessionStorage.setItem("senha", token);
-                navigate("/quiz"); // Redireciona para o quiz
+                navigate("/cadastrarProduto"); // Redireciona para o Cadastrar Produto
         }else{
             alert("Usuário ou senha inválidos!");
         }
@@ -51,7 +51,7 @@ const BoxLogin = () => {
     // até api e tras os dados
     useEffect(() => {
         //Pega a url da api
-        fetch("http://localhost:5000/usuarios")
+        fetch("http://localhost:5001/usuarios")
 
         // Promise
         .then((res) => {
@@ -72,7 +72,8 @@ const BoxLogin = () => {
                 <h1>Login</h1>
                 <div className="input-field">
                     <input 
-                        type="text" 
+                        type="text"
+                        className="input-form"
                         placeholder="Usuário"
                         required 
                         id="usuario"
@@ -82,7 +83,8 @@ const BoxLogin = () => {
                 </div>
                 <div className="input-field">
                     <input 
-                        type="password" 
+                        type="password"
+                        className="input-form"
                         placeholder="Senha"
                         id="senha"
                         ref={senha}
@@ -98,11 +100,11 @@ const BoxLogin = () => {
                     <a href="#">Esqueceu sua senha?</a>
                 </div>
 
-                <button type="submit">Entrar</button>
+                <button type="submit">Login</button>
 
                 <div className="signup-link">
                     <p>Não possui uma conta?</p>
-                    <a href="#">Criar</a>
+                    <Link to="/cadastrarUsuario">Criar</Link>
                 </div>
             </form>
 

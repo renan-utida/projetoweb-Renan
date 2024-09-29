@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import LoginBackground from "../../assets/login-background.png";
 
-export const MainLogin = styled.main`
-    margin-top: 75px;
+export const MainCriarUsuario = styled.main`
+	margin-top: 90px;
     text-shadow: #000 1px 1px;
     background-color: rgb(220, 220, 230);
     display: flex;
@@ -12,7 +12,7 @@ export const MainLogin = styled.main`
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(${LoginBackground}) no-repeat center / cover;
 `
 
-export const SectionLogin = styled.section`
+export const SectionNovoUsuario = styled.section`
     width: 450px;
     background-color: rgba(60, 60, 255, 0.15);
     backdrop-filter: blur(10px);
@@ -114,4 +114,5 @@ export const SectionLogin = styled.section`
         color: white;
         font-weight: 600;
     }     
+
 `

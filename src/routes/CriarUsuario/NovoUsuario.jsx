@@ -52,32 +52,45 @@ const NovoUsuario =()=>{
             return;
         }
 
-        fetch(`http://localhost:5001/usuarios/${id ? id :''}`,{
+        fetch(`http://localhost:5003/usuarios/${id ? id :''}`,{
             method:metodo,
             headers: {
                 'Content-type':'application/json',
             },
             //prepara para receber os dados em json
             body:JSON.stringify(usuarios),
-            //então se estiver tudo certo ele direciona para o componente que deseja
-        }).then(()=>{
+        })
+        .then((response) => {
+            if (!response.ok) {
+              throw new Error('Erro ao criar a conta.');
+            }
+            return response.json();
+          })
+          .then((data) => {
+            // Salva os dados do usuário no localStorage para manter o estado de autenticação
+            sessionStorage.setItem('usuario', JSON.stringify(data));
+            
+            // Redireciona para a página de cadastrar produto
             navigate("/cadastrarProduto");
-        });
-    };
+          })
+          .catch((error) => {
+            console.error(error);
+            alert('Erro ao criar a conta. Tente novamente.');
+          });
+      };
     
     //Hook- useEffect - realiza o efeito colateral ele carrega os usuarios cadastrados
     useEffect(()=>{
         if(id){
-            fetch(`http://localhost:5001/usuarios/${id}`)
-            .then((resp)=>{
-                return resp.json();
-            })
-            .then((data)=>{
-                setUsuarios(data);
-            });
+            fetch(`http://localhost:5003/usuarios/${id}`)
+                .then((resp)=>{
+                    return resp.json();
+                })
+                .then((data)=>{
+                    setUsuarios(data);
+                });
         }
-        //retorna um array vazio
-    },[]);  
+    },[id]);  
 
     return(
         <SectionNovoUsuario>

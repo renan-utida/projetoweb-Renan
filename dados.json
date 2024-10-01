@@ -6,9 +6,15 @@
       "id": "a0a8"
     },
     {
-      "id": "9ecf",
-      "usuario": "Jorge",
-      "senha": "12345678"
+      "id": "6f88",
+      "usuario": "Renan",
+      "senha": "123456"
+    },
+    {
+      "id": "89ce",
+      "usuario": "Joseph",
+      "senha": "123"
     }
-  ]
+  ],
+  "produtos": []
 }

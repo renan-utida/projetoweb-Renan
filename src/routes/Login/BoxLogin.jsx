@@ -51,7 +51,7 @@ const BoxLogin = () => {
     // até api e tras os dados
     useEffect(() => {
         //Pega a url da api
-        fetch("http://localhost:5001/usuarios")
+        fetch("http://localhost:5003/usuarios")
 
         // Promise
         .then((res) => {

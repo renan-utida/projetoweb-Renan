@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import LoginBackground from "../../assets/login-background.png";
+import CriarContaBackground from "../../assets/criar-usuario-background.png";
 
 export const MainCriarUsuario = styled.main`
 	margin-top: 90px;
@@ -9,7 +9,7 @@ export const MainCriarUsuario = styled.main`
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(${LoginBackground}) no-repeat center / cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(${CriarContaBackground}) no-repeat center / cover;
 `
 
 export const SectionNovoUsuario = styled.section`

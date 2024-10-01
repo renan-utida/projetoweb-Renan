@@ -1,6 +1,7 @@
-import { MainCadastro, SectionCadastrarProduto } from "./cadastro-styled"
+import { MainCadastro } from "./cadastro-styled"
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom"
+import BoxCadastro from "./BoxCadastro";
 
 const CadastrarProduto =()=>{
 
@@ -8,7 +9,7 @@ const CadastrarProduto =()=>{
     const navigate = useNavigate();
 
     useEffect(() => {
-        const usuario = sessionStorage.getItem("usuario");
+        const usuario = sessionStorage.getItem('usuario');
         if (!usuario) {
             alert("Você precisa estar logado para acessar esta página.");
             navigate("/login");
@@ -18,9 +19,7 @@ const CadastrarProduto =()=>{
 
     return(
         <MainCadastro>
-            <SectionCadastrarProduto>
-                <h1>Cadastrar Produto</h1>
-            </SectionCadastrarProduto>
+            <BoxCadastro/>
         </MainCadastro>
     )
 }

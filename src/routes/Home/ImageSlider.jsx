@@ -10,7 +10,6 @@ import {
 } from './home-styled';
 // Import das imagens do SlideshowContainer
 import CarroBYD from '../../assets/carro-eletrico-byd1.png';
-import CarroChevrolet from '../../assets/carro-eletrico-chevrolet1.png';
 import CarroTesla from '../../assets/carro-eletrico-tesla1.png';
 import CarroToyota from '../../assets/carro-eletrico-toyota1.png';
 import CarroBMW from '../../assets/carro-eletrico-bmw1.png';
@@ -18,7 +17,7 @@ import CarroBMW from '../../assets/carro-eletrico-bmw1.png';
 const ImageSlider=()=>{
 
     const [slideIndex, setSlideIndex] = useState(1);
-    const totalSlides = 5; // Você pode alterar para mais ou menos slides conforme necessário
+    const totalSlides = 4; // Você pode alterar para mais ou menos slides conforme necessário
     let slideInterval;
   
     // Função para iniciar o autoplay
@@ -51,27 +50,21 @@ const ImageSlider=()=>{
     // Lista de imagens e títulos (Você pode substituir pelas imagens reais)
     const slides = [
       {
+        image: CarroToyota,
+        title: 'Toyota bZ4X - 2022',
+        type: 'SUV',
+        call: 'Ver Produtos'
+      },
+      {
         image: CarroBYD,
         title: 'BYD Seal - 2023',
         type: 'Sedã',
         call: 'Ver Produtos'
       },
       {
-        image: CarroChevrolet,
-        title: 'Chevrolet Bolt - 2023',
-        type: 'Hatch',
-        call: 'Ver Produtos'
-      },
-      {
         image: CarroTesla,
         title: 'Tesla Model 3 - 2024',
         type: 'Sedã',
-        call: 'Ver Produtos'
-      },
-      {
-        image: CarroToyota,
-        title: 'Toyota bZ4X - 2022',
-        type: 'SUV',
         call: 'Ver Produtos'
       },
       {
@@ -96,7 +89,7 @@ const ImageSlider=()=>{
                         {/* Exibe o tipo e a chamada para ver produtos */}
                         <h2>{slide.type}</h2>
                         <p>{slide.call}</p>
-                        {/* Mostra a numeração do slide, exemplo: "1 / 5" */}
+                        {/* Mostra a numeração do slide, exemplo: "1 / 4" */}
                         <div className='numeracao-slide'>{`${index + 1} / ${totalSlides}`}</div>
                     </Link>
                 </Slide>

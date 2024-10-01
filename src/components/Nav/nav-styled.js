@@ -71,6 +71,7 @@ export const HeaderCabecalho = styled.header`
         border: 1px solid white;
         border-radius: 1.2rem;
         transition: ease 0.5s;
+        cursor: pointer;
     }
 
     .nav-login:hover{

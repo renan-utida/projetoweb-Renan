@@ -1,26 +1,36 @@
 import styled from "styled-components";
 
 export const ListarProdutosContainer = styled.div`
-    margin-top: 90px;
-    padding: 20px 0;
+    min-height: 100vh;
     background-color: #1c1c1c;
     color: #ffffff;
+    padding: 20px 0 0 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     h1{
         text-align: center;
         margin-bottom: 2rem;
+        margin-top: 90px;
     }
 
     a{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 2rem 0;
+        margin: 3rem 0;
         padding: 1rem 2rem;
         border-radius: 2rem;
-        color: ;
+        color: white;
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-decoration: none;
+        border: 1px solid white;
+        background-color: #3C3CFF;
+        transition: background-color 0.4s ease;
+    }
+    
+    a:hover{
+        background-color:#030377;
     }
 `;
 

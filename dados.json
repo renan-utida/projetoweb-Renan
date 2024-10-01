@@ -14,7 +14,26 @@
       "id": "89ce",
       "usuario": "Joseph",
       "senha": "123"
+    },
+    {
+      "id": "6800",
+      "usuario": "Renan",
+      "senha": "123"
+    },
+    {
+      "id": "fe56",
+      "usuario": "Marcos",
+      "senha": "123"
     }
   ],
-  "produtos": []
+  "produtos": [
+    {
+      "id": "d469",
+      "imagemUrl": "https://img.freepik.com/fotos-premium/carro-eletrico-ecofriendly-em-fundo-branco-ai_894067-5032.jpg",
+      "modelo": "Chevrolet T10",
+      "descricao": "Prata - 2022",
+      "tipo": "hatch",
+      "preco": "22222224"
+    }
+  ]
 }

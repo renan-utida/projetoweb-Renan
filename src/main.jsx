@@ -29,6 +29,8 @@ const router = createBrowserRouter([
       { path: '/cadastrarProduto', element: <CadastrarProduto/>},
       { path: '/criarUsuario', element: <CriarUsuario/>},
 
+      //editarUsuario NÃO PODE ESQUECER DE :id ( para editar e excluir)
+      {path:'/editarProduto/:id', element:<CadastrarProduto/>},
     ]
   }
 ]);

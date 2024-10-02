@@ -13,6 +13,46 @@ export const MainHome = styled.main`
         color: #3C3CFF;
         margin: 3rem 0 1rem;
     }
+
+    .historia{
+        margin: 2rem 0 0 0;
+        background: linear-gradient(90deg, rgba(61, 194, 245, 0.8) 0%, rgba(102, 8, 193, 0.8) 100% );
+        min-height: 350px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .historia .tit-historia{
+        color: white;
+        text-shadow: 1px 1px 2px black;
+        margin-bottom: 2rem;
+    }
+
+    .historia .historia-btn{
+        margin: 10px auto;
+        padding: 0.7rem 1.4rem;
+        font-size: 1.5rem;
+        border-radius: 1.3rem;
+        text-decoration: none;
+        color: #3C3CFF;
+        border: 3px solid #3C3CFF;
+        background-color: rgba(235, 235, 235);
+        transition: 0.5s ease;
+        font-weight: bold;
+    }
+    
+    .historia-btn:hover{
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+    .historia p{
+        color: black;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 1.1rem;
+        text-align: center;
+        margin: 3rem 0;
+    }
 `
 
 /*----------------------------------------------------------*/

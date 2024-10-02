@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom"
 import { FooterRodape } from "./footer-styled"
 
+import { FaFacebook, FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+
 const Footer =()=>{
 
     return(
@@ -14,8 +17,24 @@ const Footer =()=>{
                     <div className="integrante">
                         <h2>Integrante</h2>
                         <p>Renan Dias Utida - 558540</p>                     
-                        <h2>Turma</h2>
-                        <p>1ESPG</p>
+                        <h2>Follow Me</h2>
+                        <ul>
+                            <li>
+                                <a href="https://www.linkedin.com/in/renan-dias-utida-1b1228225/" target="_blank"><FaLinkedin className='icon-media'/></a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/renan.diasutida" target="_blank"><FaFacebook className="icon-media"/></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/_r_d_u/" target="_blank"><FaInstagram className="icon-media"/></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/@ENGENHARIASOFTWARE-bn7vp" target="_blank"><FaYoutube className="icon-media"/></a>
+                            </li>
+                            <li>
+                                <a href="renandiutida@gmail.com" target="_blank"><MdEmail className="icon-media"/></a>
+                            </li>
+                        </ul>
 
                     </div>
                     <div className='links-rapidos'>

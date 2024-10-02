@@ -2,6 +2,7 @@ import { MainHome, CardBox } from "./home-styled"
 import ImageSlider from "./ImageSlider"
 import Card from "./Card"
 
+import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 // Produtos fixos
@@ -73,6 +74,11 @@ const Home =()=>{
                     <Card key={produto.id} produto={produto} />
                 ))}
             </CardBox>
+            <div className="historia">
+              <h2 className="tit-historia">Conheça um pouco mais sobre nós!</h2>
+              <Link to='/sobre' className="historia-btn">Clique aqui!</Link>
+              <p>Eletric Life, a Melhor Loja de Carros Elétricos do País</p>
+            </div>
         </MainHome>
     )
 }

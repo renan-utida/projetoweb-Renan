@@ -55,6 +55,34 @@ export const FooterRodape = styled.footer`
         list-style: none;
     }
 
+    .footer-info .integrante ul{
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+    }
+
+    .footer-info .integrante ul li a .icon-media{
+        width: 35px;
+        height: 35px;
+        color: white;
+        padding: 0.3rem;
+        transition: color 0.4s ease;
+    }
+
+    .footer-info .integrante ul li a .icon-media:hover{
+        color: #5a5aff;
+    }
+
+    .footer-info .integrante ul li .icon-media{
+        width: 35px;
+        height: 35px;
+        color: white;
+        padding: 0.3rem;
+        transition: color 0.4s ease;
+    }
+
+
+
     .footer-info .links-rapidos{
         margin: 0 15px 0 35px;
         flex: 1 0;

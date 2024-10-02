@@ -6,31 +6,39 @@ export const ListarProdutosContainer = styled.div`
     color: #ffffff;
     padding: 20px 0 0 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+`;
 
-    h1{
+export const HeaderRow = styled.div`
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 2rem;
+    margin-top: 90px;
+    position: relative;
+
+    h1 {
+        position: absolute;
+        margin: 0 0 0 1rem;
+        left: 50%;
         text-align: center;
-        margin-bottom: 2rem;
-        margin-top: 90px;
+        transform: translateX(-50%);
     }
 
-    a{
-        margin: 3rem 0;
-        padding: 1rem 2rem;
-        border-radius: 2rem;
-        color: white;
-        font-size: 1.1rem;
+    a {
+        float: left;
+        margin: 8px 0 0 2rem;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
         font-weight: bold;
         text-decoration: none;
-        border: 1px solid white;
-        background-color: #3C3CFF;
-        transition: background-color 0.4s ease;
+        border: 2px solid white;
+        border-radius: 1rem;
+        color:  white;
+        background-color: #484848;
+        transition: 0.6s ease;
     }
-    
-    a:hover{
-        background-color:#030377;
+
+    a:hover {
+        background-color: #676767;
     }
 `;
 

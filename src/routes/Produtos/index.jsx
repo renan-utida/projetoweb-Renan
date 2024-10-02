@@ -1,8 +1,13 @@
-import { ListarProdutosContainer, Table, TableRow, TableHeader, TableCell, ProductImage } from "./produtos-styled.js";
+import { ListarProdutosContainer, Table, TableRow, TableHeader, TableCell, ProductImage, HeaderRow } from "./produtos-styled.js";
 
 import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { FaEdit, FaTrashAlt } from "react-icons/fa";
+
+import CarroBYD from '../../assets/carro-eletrico-byd1.png';
+import CarroTesla from '../../assets/carro-eletrico-tesla1.png';
+import CarroToyota from '../../assets/carro-eletrico-toyota1.png';
+import CarroBMW from '../../assets/carro-eletrico-bmw1.png';
 
 const Produtos = () => {
 
@@ -10,6 +15,42 @@ const Produtos = () => {
     const [produtos, setProdutos] = useState([]);
 
     const navigate = useNavigate();
+
+    // Produtos fixos
+    const produtosFixos = [
+        {
+            id: 1,
+            modelo: 'Toyota bZ4X',
+            descricao: 'Prata - 2022',
+            tipo: 'SUV',
+            preco: 120000,
+            imagemUrl: CarroToyota,
+        },
+        {
+            id: 2,
+            modelo: 'BYD Seal',
+            descricao: 'Cinza - 2023',
+            tipo: 'Sedã',
+            preco: 160000,
+            imagemUrl: CarroBYD,
+        },
+        {
+            id: 3,
+            modelo: 'Tesla Model 3',
+            descricao: 'Branco - 2024',
+            tipo: 'Sedã',
+            preco: 180000,
+            imagemUrl: CarroTesla,
+        },
+        {
+            id: 4,
+            modelo: 'BMW i7',
+            descricao: 'Prata - 2023',
+            tipo: 'Sedã',
+            preco: 150000,
+            imagemUrl: CarroBMW,
+        },
+    ];
 
     // Aqui assumo que você possui um método para checar se o usuário está logado.
     const isLoggedIn = true; 
@@ -30,13 +71,6 @@ const Produtos = () => {
 
     // função deletar
     const handleDelete = (id) => {
-        if (!isLoggedIn) {
-            alert("Você precisa estar logado para deletar um produto.");
-            navigate("/login");
-            return;
-        }
-
-        // Se o usuário estiver logado, faça a requisição para deletar o produto
         fetch(`http://localhost:5003/produtos/${id}`, {
             method: 'DELETE',
         })
@@ -63,7 +97,10 @@ const Produtos = () => {
 
     return (
         <ListarProdutosContainer>
-            <h1>Produtos Eletric Life</h1>
+            <HeaderRow>
+                <Link to={isLoggedIn ? '/cadastrarProduto' : '/login'}>Cadastrar Produto</Link>
+                <h1>Produtos Eletric Life</h1>
+            </HeaderRow>
             <Table>
                 <thead>
                     <TableRow>
@@ -77,6 +114,19 @@ const Produtos = () => {
                     </TableRow>
                 </thead>
                 <tbody>
+                    {/* Renderizando produtos fixos */}
+                    {produtosFixos.map((produto) => (
+                        <TableRow key={produto.id}>
+                            <TableCell>{produto.id}</TableCell>
+                            <TableCell>{produto.modelo}</TableCell>
+                            <TableCell>{produto.descricao}</TableCell>
+                            <TableCell>{produto.tipo}</TableCell>
+                            <TableCell>{parseFloat(produto.preco).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</TableCell>
+                            <TableCell><ProductImage src={produto.imagemUrl} alt={produto.modelo} /></TableCell>
+                            <TableCell></TableCell> {/* Sem ícones para produtos fixos */}
+                        </TableRow>
+                    ))}
+                    {/* Renderizando produtos do usuário */}
                     {produtos.map((produto) => (
                         <TableRow key={produto.id}>
                             <TableCell>{produto.id}</TableCell>
@@ -93,7 +143,6 @@ const Produtos = () => {
                     ))}
                 </tbody>
             </Table>
-            <Link to={isLoggedIn ? '/cadastrarProduto' : '/login'}>Cadastrar Produto</Link>
         </ListarProdutosContainer>
     )
 }

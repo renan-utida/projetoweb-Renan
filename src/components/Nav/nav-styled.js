@@ -4,7 +4,7 @@ export const HeaderCabecalho = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 4rem;
+    padding: 1em 3rem;
     height: 90px;
     position: fixed;
     width: 100%;
@@ -13,7 +13,7 @@ export const HeaderCabecalho = styled.header`
     overflow: hidden;
 
     .link-logo{
-        font-size: 3rem;
+        font-size: 2.8rem;
         font-weight: bold;
         font-family: "PT Serif", serif;
         font-style: italic;

@@ -77,6 +77,7 @@ const Produtos = () => {
             .then(() => {
                 // Atualizando a lista de produtos ao remover um item
                 setProdutos((prevProdutos) => prevProdutos.filter((produto) => produto.id !== id));
+                alert("Produto excluído com sucesso!");
             })
             .catch((error) => {
                 console.error("Erro ao deletar o produto:", error);
@@ -91,6 +92,7 @@ const Produtos = () => {
             return;
         }
 
+        alert("Por favor, edite o que quiser no seu produto!");
         // Navegar para a página de edição (substitua com sua rota de edição)
         navigate(`/editarProduto/${id}`);
     };

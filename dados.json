@@ -37,6 +37,30 @@
       "descricao": "Vermelho - 2024",
       "tipo": "Sedã",
       "preco": "150000"
+    },
+    {
+      "id": "9dc1",
+      "imagemUrl": "https://s2-autoesporte.glbimg.com/x9p8b_tooa1yQufcWIdeVUGqgjs=/0x0:1004x674/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_cf9d035bf26b4646b105bd958f32089d/internal_photos/bs/2023/p/4/gqKVRATWWimieUz8YXug/byd-dolphin.jpeg",
+      "modelo": "BYD Dolphin",
+      "descricao": "Grafite - 2023",
+      "tipo": "SUV",
+      "preco": "88000"
+    },
+    {
+      "id": "f9b6",
+      "imagemUrl": "https://cdn.motor1.com/images/mgl/E6Pbpw/s1/volvo-c40-recharge.jpg",
+      "modelo": "Volvo C40",
+      "descricao": "Branco - 2023",
+      "tipo": "SUV",
+      "preco": "137000"
+    },
+    {
+      "id": "3f7e",
+      "imagemUrl": "https://quatrorodas.abril.com.br/wp-content/uploads/2024/03/files__image_05cc7034-ca29-4293-a530-df8d4dc7d55b.jpg?crop=1&resize=1212,909",
+      "modelo": "Renault Kwid E-Tech",
+      "descricao": "Branco - 2024",
+      "tipo": "Hatch",
+      "preco": "85000"
     }
   ]
 }

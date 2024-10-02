@@ -50,4 +50,43 @@ export const MainSobre = styled.main`
         height: auto; /* Mantém a proporção da imagem */
         object-fit: contain; /* Garante que a imagem se ajuste bem ao espaço */
     }
-`
+
+    .box-desenvolvedor{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        min-height: 200px;
+        width: fit-content;
+        margin: 20px auto;
+        padding: 20px;
+        gap: 20px;
+        border: 1px solid black;
+    }
+
+    .box-desenvolvedor img{
+        max-width: 200px;
+        max-height: 200px;
+    }
+    
+    .box-info{
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .box-info h2{
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+
+    .box-info p{
+        font-size: 1.1rem;
+        font-style: italic;
+    }
+
+    .box-info .nome{
+        font-size: 1.4rem;
+        font-weight: 800;
+        font-style: italic;
+    }
+`;

@@ -32,7 +32,7 @@ const Footer =()=>{
                                 <a href="https://www.youtube.com/@ENGENHARIASOFTWARE-bn7vp" target="_blank"><FaYoutube className="icon-media"/></a>
                             </li>
                             <li>
-                                <a href="renandiutida@gmail.com" target="_blank"><MdEmail className="icon-media"/></a>
+                                <a href="mailto:renandiutida@gmail.com" target="_blank"><MdEmail className="icon-media"/></a>
                             </li>
                         </ul>
 

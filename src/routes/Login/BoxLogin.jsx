@@ -41,6 +41,7 @@ const BoxLogin = () => {
                 Math.random().toString(16).substring(2)
                 sessionStorage.setItem("usuario", usuario.current.value);
                 sessionStorage.setItem("senha", token);
+                alert("Usuário logado com sucesso!");
                 navigate("/cadastrarProduto"); // Redireciona para o Cadastrar Produto
         }else{
             alert("Usuário ou senha inválidos!");

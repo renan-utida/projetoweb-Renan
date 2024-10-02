@@ -1,7 +1,7 @@
 import { MainSobre } from "./sobre-styled"
 import SobreImagem from "./../../assets/sobre-background.png"
 
-
+import DesenvolvedorFoto from "./../../assets/desenvolvedor-foto.png"
 const Sobre =()=>{
 
     return(
@@ -16,6 +16,18 @@ const Sobre =()=>{
             <section className='obrigado'>
                 <p>Obrigado por escolher a Eletric Life. Estamos ansiosos para atendê-lo!</p>
                 <img src={SobreImagem} alt="Imagem Carro Elétrico" />
+            </section>
+            <section>
+                <div className="box-desenvolvedor">
+                    <img src={DesenvolvedorFoto} alt="Foto Renan" />
+                    <div className="box-info">
+                        <h2>Desenvolvedor</h2>
+                        <p className="nome">Renan Dias Utida</p>
+                        <p>21 Anos</p>
+                        <p>RM 558540</p>
+                        <p>Sala: 1ESPG</p>
+                    </div>                 
+                </div>
             </section>
         </MainSobre>
     )

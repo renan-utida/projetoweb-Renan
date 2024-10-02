@@ -69,7 +69,7 @@ const NovoUsuario =()=>{
           .then((data) => {
             // Salva os dados do usuário no localStorage para manter o estado de autenticação
             sessionStorage.setItem('usuario', JSON.stringify(data));
-            
+            alert("Conta criada com sucesso!");
             // Redireciona para a página de cadastrar produto
             navigate("/cadastrarProduto");
           })

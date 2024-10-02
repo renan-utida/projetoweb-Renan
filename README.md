@@ -20,8 +20,11 @@ Esse projeto foi desenvolvido para a disciplina de **Web Development** no segund
 2. Utilize o comando `git clone https://github.com/renan-utida/projetoweb-Renan` para salvar uma cópia do projeto;
 3. Navegue até o projeto `cd projetoweb-Renan`;
 4. Utilize o comando `npm run dev`; <br>
-4.1 O acesso padrão é o `http://localhost:5178/`
+4.1 O acesso padrão é o `http://localhost:5179/`
 
 ## Desenvolvedores:
 
 Renan Dias Utida - RM 558540
+
+# Link do github
+https://github.com/renan-utida/projetoweb-Renan

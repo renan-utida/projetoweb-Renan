@@ -4,7 +4,7 @@ export const ListarProdutosContainer = styled.div`
     min-height: 100vh;
     background-color: #1c1c1c;
     color: #ffffff;
-    padding: 20px 0 0 0;
+    padding: 20px 0 70px 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 `;
 

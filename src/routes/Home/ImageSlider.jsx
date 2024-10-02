@@ -53,25 +53,25 @@ const ImageSlider=()=>{
         image: CarroToyota,
         title: 'Toyota bZ4X - 2022',
         type: 'SUV',
-        call: 'Ver Produtos'
+        call: 'Ver Tabela de Produtos'
       },
       {
         image: CarroBYD,
         title: 'BYD Seal - 2023',
         type: 'Sedã',
-        call: 'Ver Produtos'
+        call: 'Ver Tabela de Produtos'
       },
       {
         image: CarroTesla,
         title: 'Tesla Model 3 - 2024',
         type: 'Sedã',
-        call: 'Ver Produtos'
+        call: 'Ver Tabela de Produtos'
       },
       {
         image: CarroBMW,
         title: 'BMW i7 - 2023',
         type: 'Sedã',
-        call: 'Ver Produtos'
+        call: 'Ver Tabela de Produtos'
       }
     ];
 

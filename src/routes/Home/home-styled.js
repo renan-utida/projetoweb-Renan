@@ -3,6 +3,16 @@ import styled from "styled-components";
 export const MainHome = styled.main`
     margin-top: 90px;
     width: 100%;
+    background-color: #f4f4f4;
+
+    h2{
+        font-size: 2.8rem;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        color: #3C3CFF;
+        margin: 3rem 0 1rem;
+    }
 `
 
 /*----------------------------------------------------------*/
@@ -130,3 +140,67 @@ export const Dot = styled.span`
     transition: background-color 0.6s ease;
     cursor: pointer;
 `
+
+//---------------------------------------------------//
+// Estilizacao para os cards relacionados a Card.jsx
+export const CardContainer = styled.div`
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0 0 1.3rem 0;
+  margin: 8px;
+  width: calc(30% - 16px); // 3 cards por linha, com margem incluída
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+`;
+
+export const ProductImage = styled.img`
+  height: 225px;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.4rem;
+`;
+
+export const ProductInfo = styled.div`
+  text-align: center;
+  margin-top: 12px;
+
+  h3{
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+  }
+
+  p{
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+`;
+
+export const ProductButton = styled.button`
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  background-color: #3C3CFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.4s ease;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+`;
+
+// -------------------------------------------------------------//
+// Estilizacao dos cards na pagina principal
+export const CardBox = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-evenly;
+  padding: 16px;
+`;

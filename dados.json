@@ -14,16 +14,29 @@
       "id": "97dc",
       "usuario": "Renan",
       "senha": "123"
+    },
+    {
+      "id": "abc5",
+      "usuario": "renan",
+      "senha": "123"
     }
   ],
   "produtos": [
     {
-      "id": "d469",
+      "id": "d710",
       "imagemUrl": "https://www.autoo.com.br/fotos/2023/6/1280_960/byd_dolphin_2024_1_29062023_75040_1280_960.jpg",
       "modelo": "BYD Future",
-      "descricao": "Cinza - 2023",
+      "descricao": "Prata - 2025",
       "tipo": "SUV",
-      "preco": "100400"
+      "preco": "250000"
+    },
+    {
+      "id": "e91c",
+      "imagemUrl": "https://sp-ao.shortpixel.ai/client/q_glossy,ret_img,w_680,h_350/https://carroeletrico.com.br/wp-content/uploads/2017/11/Tesla-680x350.jpg",
+      "modelo": "Tesla E-24 Car",
+      "descricao": "Vermelho - 2024",
+      "tipo": "Sedã",
+      "preco": "150000"
     }
   ]
 }

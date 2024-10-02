@@ -110,7 +110,7 @@ const BoxCadastro=()=>{
                     <option value="">Selecione o tipo</option>
                     <option value="Hatch">Hatch</option>
                     <option value="SUV">SUV</option>
-                    <option value="Sedã">Sedan</option>
+                    <option value="Sedã">Sedã</option>
                 </select>
 
                 <span>Preço</span>
